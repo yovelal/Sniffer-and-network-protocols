@@ -24,5 +24,5 @@ we would like a mechanism to identify an attacker that will work during the enti
 1. If at least 80% of the messages (0.8*d) didn’t arrive at least 2 times .<br />
 2. If a specific packet does not arrive at least 5 times.<br />
 3. If all d packets were retransmitted at least max(8,0.5*d) times.<br />
-<br />If one of the conditions is met, the server sends the client a warning message about a high probability of an attack. The client will close the connection.<br />
+If one of the conditions is met, the server sends the client a warning message about a high probability of an attack. The client will close the connection.<br />
 In addition, assume the attacker tries to prevent the connection by dropping the handshake packet (which contains e and d). Our protocol makes the attack more difficult by having the number d be randomly rechosen, so the packet of the handshake is dynamic.
